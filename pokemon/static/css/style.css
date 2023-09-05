@@ -1,0 +1,82 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #3498db;
+    min-height: 100vh;
+}
+
+
+header {
+    text-align: center;
+    background-color: #2980b9; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Texto em branco para contraste */
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 36px;
+}
+
+
+main {
+    padding: 20px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+form {
+    margin: 0 auto;
+    max-width: 400px; /* Define a largura máxima do formulário */
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo do formulário */
+    border-radius: 5px; /* Borda arredondada */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+input[type="number"] {
+    width: 100%;
+    max-width: 300px; 
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #2980b9; 
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #2577a9; /* Cor de fundo do botão de envio quando hover */
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #2980b9;
+    color: #fff;
+}

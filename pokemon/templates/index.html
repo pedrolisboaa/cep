@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Teste - API </title>
+    <link rel="stylesheet" href=" {% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Buscador de CEP</h1>
+    </header>
+    <main>
+
+        
+        <form action="{% url 'index' %}" method="post">
+            {% csrf_token %}
+            <input type="number", max="99999999" name="cep" id="cep">
+            <input type="submit" value="Buscar Endereço">
+        </form>
+        
+        
+        <h2>Informações do Endereço</h2>
+        <h3>{{texto}}</h3>
+        <p><strong>CEP:</strong> {{ endereco.cep }}</p>
+        <p><strong>Endereço Completo:</strong> {{ endereco.address }}</p>
+        <p><strong>Estado:</strong> {{ endereco.state }}</p>
+        <p><strong>Bairro:</strong> {{ endereco.district }}</p>
+        <p><strong>Cidade:</strong> {{ endereco.city }}</p>
+        <p><strong>Latitude:</strong> {{ endereco.lat }}</p>
+        <p><strong>Longitude:</strong> {{ endereco.lng }}</p>
+        <p><strong>Código IBGE da Cidade:</strong> {{ endereco.city_ibge }}</p>
+        <p><strong>DDD:</strong> {{ endereco.ddd }}</p>
+        
+        
+
+    </main>
+    <footer>
+        <p>&copy; 2023 </p>
+    </footer>
+</body>
+</html>
