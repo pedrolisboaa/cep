@@ -28,16 +28,3 @@ def index(request):
         
     return render(request, 'index.html',)
 
-    """
-    api_url = 'https://cep.awesomeapi.com.br/json/71680385'
-    response = requests.get(api_url)
-    if response.status_code == 200:
-        data = response.json()
-
-        conteudo = {
-            'data': data
-        }
-        return render(request, 'index.html', conteudo)
-    else:
-        return render(request, 'index.html')
-    """
